@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkmsdck4y38wy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0vvm8"]
+bg_color = Color(0.18207282, 0, 0.9114157, 1)
+
+[node name="Button_0_0" type="Button"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_0vvm8")

@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://beqphpj3olc07"]
+
+[ext_resource type="Script" uid="uid://dv5nekqrh4q7q" path="res://minMaxSolver.gd" id="1_2mb6e"]
+[ext_resource type="PackedScene" uid="uid://dkmsdck4y38wy" path="res://button.tscn" id="1_dast7"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2mb6e")
+
+[node name="HBoxContainer_0" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button_0_0" parent="VBoxContainer/HBoxContainer_0" instance=ExtResource("1_dast7")]
+layout_mode = 2
+
+[node name="Button_0_1" parent="VBoxContainer/HBoxContainer_0" instance=ExtResource("1_dast7")]
+layout_mode = 2
+
+[node name="Button_0_2" parent="VBoxContainer/HBoxContainer_0" instance=ExtResource("1_dast7")]
+layout_mode = 2
+
+[node name="HBoxContainer_1" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button_1_0" parent="VBoxContainer/HBoxContainer_1" instance=ExtResource("1_dast7")]
+layout_mode = 2
+
+[node name="Button_1_1" parent="VBoxContainer/HBoxContainer_1" instance=ExtResource("1_dast7")]
+layout_mode = 2
+
+[node name="Button_1_2" parent="VBoxContainer/HBoxContainer_1" instance=ExtResource("1_dast7")]
+layout_mode = 2
+
+[node name="HBoxContainer_2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button_2_0" parent="VBoxContainer/HBoxContainer_2" instance=ExtResource("1_dast7")]
+layout_mode = 2
+
+[node name="Button_2_1" parent="VBoxContainer/HBoxContainer_2" instance=ExtResource("1_dast7")]
+layout_mode = 2
+
+[node name="Button_2_2" parent="VBoxContainer/HBoxContainer_2" instance=ExtResource("1_dast7")]
+layout_mode = 2
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer_0/Button_0_0" to="VBoxContainer" method="_on_button_0_0_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer_0/Button_0_1" to="VBoxContainer" method="_on_button_0_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer_0/Button_0_2" to="VBoxContainer" method="_on_button_0_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer_1/Button_1_0" to="VBoxContainer" method="_on_button_1_0_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer_1/Button_1_1" to="VBoxContainer" method="_on_button_1_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer_1/Button_1_2" to="VBoxContainer" method="_on_button_1_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer_2/Button_2_0" to="VBoxContainer" method="_on_button_2_0_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer_2/Button_2_1" to="VBoxContainer" method="_on_button_2_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer_2/Button_2_2" to="VBoxContainer" method="_on_button_2_2_pressed"]
